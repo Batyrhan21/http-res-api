@@ -1,11 +1,8 @@
 package store
 
-
 type Store struct {
-	config         *Config
-
+	config *Config
 }
-
 
 func New(config *Config) *Store {
 	return &Store{
@@ -13,11 +10,9 @@ func New(config *Config) *Store {
 	}
 }
 
-
 func (s *Store) Open() error {
 	return nil
 }
-
 
 func (s *Store) Close() {
 	//return nil
